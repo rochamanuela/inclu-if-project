@@ -20,3 +20,11 @@ a {
         -0.1px 0.1px 0px black,
         0.1px 0.1px 0px black;
 }
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: justify;
+    color: #000;
+}
