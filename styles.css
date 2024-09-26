@@ -23,7 +23,7 @@ a {
 
 p {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 25px;
     text-align: justify;
     color: #000;
@@ -109,7 +109,7 @@ p {
 
 /* styles for banner */
 .banner {
-    height: 100vh;
+    height: 96vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,4 +139,143 @@ p {
     position: absolute;
     top: 27px;
     right: 24px;
+}
+
+/* styles for texts */
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1.title {
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: 0.06em;
+    hanging-punctuation: first last;
+    text-transform: uppercase;
+}
+
+h1.title-black {
+    color: #000;
+    text-shadow:
+        -0.9px -0.9px 0px black,
+        0.9px -0.9px 0px black,
+        -0.9px 0.9px 0px black,
+        0.9px 0.9px 0px black;
+    margin-bottom: 10px;
+}
+
+h1.title-white {
+    color: #fff;
+    text-shadow:
+        -0.9px -0.9px 0px white,
+        0.9px -0.9px 0px white,
+        -0.9px 0.9px 0px white,
+        0.9px 0.9px 0px white;
+    margin-bottom: 10px;
+}
+
+section#history {
+    background-color: #1A1A1A;
+    margin-top: 75px;
+    padding-top: 75px;
+}
+
+section#history p {
+    color: #fff;
+    opacity: 0.75;
+}
+
+img.first-img,
+img.second-img,
+img.third-img,
+img.fourth-img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+img.first-img {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+img.third-img {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+img.second-img,
+img.fourth-img {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+section#history img.shape {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-bottom: 30px;
+}
+
+img.bubble-1 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+img.bubble-2 {
+    margin-top: 10px;
+    margin-bottom: 26px;
+}
+
+h1.title-small {
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: 0.06em;
+    hanging-punctuation: first last;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* styles for organization */
+.people {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 150px;
+    margin-top: 50px;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 124px;
+}
+
+.person-img {
+    width: 110px;
+    border-radius: 50%;
+}
+
+.person-name {
+    font-size: 16px;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 15px;
+    color: #000;
+    text-shadow:
+        -0.4px -0.4px 0px white,
+        0.4px -0.4px 0px white,
+        -0.4px 0.4px 0px white,
+        0.4px 0.4px 0px white;
+}
+
+.person-function {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #727272;
+    margin-top: 4px;
 }
