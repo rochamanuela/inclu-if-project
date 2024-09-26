@@ -37,12 +37,16 @@ p {
     padding: 20px;
     background-color: #fff;
     color: #000;
+    position: absolute;
 }
 
 .menu-icon {
     cursor: pointer;
     font-size: 30px;
     font-weight: 900;
+}
+
+#close-menu-icon {
     margin-left: 26px;
     margin-top: 26px;
     margin-bottom: 30px;
@@ -101,4 +105,38 @@ p {
 
 .overlay.open {
     display: block;
+}
+
+/* styles for banner */
+.banner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img.shape {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: -130px;
+}
+
+.banner p.banner-subtitle {
+    width: 261px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    text-align: left;
+    margin-top: 18px;
+}
+
+.banner p.banner-subtitle span {
+    background: #EFCFE2;
+}
+
+.bubble {
+    position: absolute;
+    top: 27px;
+    right: 24px;
 }

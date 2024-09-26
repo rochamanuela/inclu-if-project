@@ -1,5 +1,5 @@
 // Variables to select elements
-const menuIcon = document.getElementById('menu-icon')
+const menuIcon = document.getElementById('open-menu-icon')
 const closeMenuIcon = document.getElementById('close-menu-icon')
 const internalLinks = document.getElementById('internal-links')
 const overlay = document.getElementById('overlay')
