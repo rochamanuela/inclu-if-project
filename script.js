@@ -14,3 +14,26 @@ function toggleMenu() {
 menuIcon.addEventListener('click', toggleMenu)
 closeMenuIcon.addEventListener('click', toggleMenu)
 overlay.addEventListener('click', toggleMenu)
+
+
+
+
+// Selecionar todos os botões de accordion
+const buttons = document.querySelectorAll('.accordion-button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function () {
+        // Pegar o conteúdo correspondente
+        const content = this.nextElementSibling;
+        const icon = this.querySelector('.icon');
+
+        // Alternar o display do conteúdo entre "block" e "none"
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+            icon.textContent = '+'; // Alterar para o ícone "+"
+        } else {
+            content.style.display = 'block';
+            icon.textContent = '-'; // Alterar para o ícone "-"
+        }
+    });
+});
