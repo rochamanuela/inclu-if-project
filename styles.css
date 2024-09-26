@@ -344,3 +344,28 @@ h1.title-small {
     margin-right: 20px;
     margin-top: -10px;
 }
+
+/* styles for location */
+iframe {
+    margin-top: 35px;
+    height: 320px;
+    border-radius: 8px;
+    width: 100%;
+    border: 0;
+}
+
+.gm-style .place-card-medium {
+    display: none;
+}
+
+/* styles for documentation */
+section#documentation {
+    margin-top: 130px;
+    margin-bottom: 75px;
+}
+
+img.shape-middle {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
