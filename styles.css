@@ -28,3 +28,77 @@ p {
     text-align: justify;
     color: #000;
 }
+
+/* teste */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+.menu-icon {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 26px;
+    margin-top: 26px;
+    margin-bottom: 30px;
+}
+
+.internal-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    color: #000;
+    transition: left .5s ease-in-out;
+    box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.15);
+}
+
+.internal-links img {
+    width: 120px;
+    height: auto;
+    padding-left: 26px;
+    margin-bottom: 50px;
+}
+
+.internal-links.open {
+    left: 0;
+}
+
+.internal-links .links a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.internal-links .links {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 30px;
+    padding-left: 26px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.overlay.open {
+    display: block;
+}
