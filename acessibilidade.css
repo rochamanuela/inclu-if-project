@@ -1,0 +1,45 @@
+.no_image{
+    display: none;
+}
+
+img.contrast, section#documentation.contrast a.download, iframe.contrast {
+    filter: invert(1);
+}
+
+img.logotype-dark.contrast, img.logo-if.contrast, section#history.contrast img.shape{
+    filter: none;
+}
+
+.contrast, h1.title-black.contrast, .banner p.banner-subtitle.contrast, .internal-links 
+.links.contrast a, h1.title-white.contrast, section#history.contrast p, .accordion-button.contrast:hover,
+section#documentation.contrast p a, button.contrast {
+    color: #FF0;
+    text-shadow: none;
+}
+
+body.contrast, .navbar.contrast, .internal-links.contrast, .banner.contrast, .banner-content.contrast,
+.banner p.banner-subtitle.contrast span, section.contrast, section#history.contrast, 
+.accordion-button.contrast, section#location.contrast div, button.contrast, section.contrast, 
+body.contrast::-webkit-scrollbar-track {
+    background: #000;
+}
+
+section#documentation.contrast p a{
+    text-decoration: underline;
+}
+
+.accordion-button.contrast{
+    border-top: 2px solid #FF0;
+}
+
+.banner-content.contrast, body.contrast::-webkit-scrollbar-thumb{
+    border-color: #FF0;
+}
+
+body.contrast::-webkit-scrollbar-thumb {
+    background-color: #FF0;
+}
+
+body.contrast::-webkit-scrollbar-thumb:hover {
+    background-color: #B2B224;
+}

@@ -15,9 +15,6 @@ menuIcon.addEventListener('click', toggleMenu)
 closeMenuIcon.addEventListener('click', toggleMenu)
 overlay.addEventListener('click', toggleMenu)
 
-
-
-
 // Selecionar todos os botões de accordion
 const buttons = document.querySelectorAll('.accordion-button');
 

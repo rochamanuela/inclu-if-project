@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="acessibilidade.css">
     <title>IncluIF</title>
 </head>
 
@@ -29,7 +30,6 @@
             </div>
         </div>
     </div>
-
     <div class="banner">
         <div class="banner-content">
             <img src="vectors/logotype-medium.svg" alt="">
@@ -39,8 +39,11 @@
         <img src="images/shapes/shape-1-mobile.png" alt="" class="shape">
         <img src="vectors/bubble.svg" alt="" class="bubble">
     </div>
-
     <section>
+        <button class="remove-images">Image</button>
+        <button class="increase-size">Size</button>
+        <button class="toggle-color">Contraste</button>
+        <button class="decrease-size">Size</button>
         <h1 class="title title-black">Conheça o projeto</h1>
         <p>O IncluIF é uma Exposição de Arte que iniciou com a ideia de apresentar trabalhos - em sua maioria pinturas
             em Acrílico - realizados pelo Prof. Leandro Camara Ledel.</p>
@@ -187,14 +190,12 @@
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14706.762067794465!2d-47.2311636!3d-22.8509368!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8bc16c66f0bed%3A0x1aee5c111efc6196!2sInstituto%20Federal%20de%20Educa%C3%A7%C3%A3o%2C%20Ci%C3%AAncia%20e%20Tecnologia%20de%20S%C3%A3o%20Paulo%2C%20Campus%20Hortol%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1727378448048!5m2!1spt-BR!2sbr"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-
     <section id="documentation">
         <h1 class="title title-black">Documentação</h1>
         <p>Caso tenha interesse em acessar a documentação completa sobre o projeto, você pode acessá-la <a
                 href="doc_incluif.pdf" target="_blank">clicando aqui</a></p>
         <a href="doc_incluif.pdf" class="download" download></a>
     </section>
-
     <footer>
         <div class="main-footer">
             <div style="display: flex;flex-direction: column; align-items: center;">
@@ -207,8 +208,19 @@
         <hr>
         <p class="copy">© Todos os direitos reservados por IFSP Hortolância</p>
     </footer>
-
     <script src="script.js"></script>
+    <script src="acessibilidade.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 </body>
 
 </html>
