@@ -7,7 +7,7 @@ const removeImageButton = document.querySelector('.remove-images')
 const images = document.querySelectorAll('img');
 removeImageButton.addEventListener('click', removeAllImages);
 
-const text = document.querySelectorAll('p, h1, a');
+const text = document.querySelectorAll('p, h1, h2, a, button');
 const increaseSizeButton = document.querySelector('.increase-size');
 const decreaseSizeButton = document.querySelector('.decrease-size');
 increaseSizeButton.addEventListener('click', () => changeSize('increase'))
