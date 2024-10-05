@@ -35,9 +35,9 @@ function toggleColor() {
 
 function changeSize(operation){
     if(operation == 'increase')
-        value = 1.3;
+        value = 1.1;
     else
-        value = 0.7;
+        value = 0.9;
 
     text.forEach(element => {
         const style = window.getComputedStyle(element);
@@ -48,9 +48,9 @@ function changeSize(operation){
 
 function changeRowSize(operation){
     if(operation == 'increase')
-        value = 1.1;
+        value = 1.3;
     else
-        value = 0.9;
+        value = 0.7;
 
     text.forEach(element => {
         const style = window.getComputedStyle(element);
