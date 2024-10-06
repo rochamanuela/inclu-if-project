@@ -2,10 +2,6 @@
     display: none;
 }
 
-img.contrast, section#documentation.contrast a.download, iframe.contrast {
-    filter: invert(1);
-}
-
 img.logotype-dark.contrast, img.logo-if.contrast, section#history.contrast img.shape{
     filter: none;
 }
@@ -14,6 +10,7 @@ img.logotype-dark.contrast, img.logo-if.contrast, section#history.contrast img.s
 .links.contrast a, h1.title-white.contrast, section#history.contrast p, .accordion-button.contrast:hover,
 section#documentation.contrast p a, button.contrast {
     color: #FF0;
+    opacity: 1;
     text-shadow: none;
 }
 
@@ -42,4 +39,12 @@ body.contrast::-webkit-scrollbar-thumb {
 
 body.contrast::-webkit-scrollbar-thumb:hover {
     background-color: #B2B224;
+}
+
+section#documentation.contrast a.download {
+    background-image: url('contrast_images/download-contrast.svg');
+}
+
+section#documentation.contrast a.download:hover {
+    background-image: url('contrast_images/download-hover-contrast.svg');
 }
