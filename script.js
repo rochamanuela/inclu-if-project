@@ -15,6 +15,23 @@ menuIcon.addEventListener('click', toggleMenu)
 closeMenuIcon.addEventListener('click', toggleMenu)
 overlay.addEventListener('click', toggleMenu)
 
+// Variables to select elements
+const menuAccessibility = document.getElementById('open-menu-accessibility')
+const closeMenuAccessibility = document.getElementById('close-menu-accessibility')
+const internalButtons = document.getElementById('internal-buttons')
+
+// Function to toggle the menu
+function toggleMenuAccebility() {
+    internalButtons.classList.toggle('open')
+    overlay.classList.toggle('open')
+}
+
+// Event listeners for opening/closing the menu
+menuAccessibility.addEventListener('click', toggleMenuAccebility)
+closeMenuAccessibility.addEventListener('click', toggleMenuAccebility)
+overlay.addEventListener('click', toggleMenuAccebility)
+
+
 // Selecionar todos os botões de accordion
 const buttons = document.querySelectorAll('.accordion-button');
 
