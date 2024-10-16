@@ -21,15 +21,15 @@ const closeMenuAccessibility = document.getElementById('close-menu-accessibility
 const internalButtons = document.getElementById('internal-buttons')
 
 // Function to toggle the menu
-function toggleMenuAccebility() {
+function toggleMenuAccessibility() { 
     internalButtons.classList.toggle('open')
     overlay.classList.toggle('open')
 }
 
 // Event listeners for opening/closing the menu
-menuAccessibility.addEventListener('click', toggleMenuAccebility)
-closeMenuAccessibility.addEventListener('click', toggleMenuAccebility)
-overlay.addEventListener('click', toggleMenuAccebility)
+menuAccessibility.addEventListener('click', toggleMenuAccessibility)
+closeMenuAccessibility.addEventListener('click', toggleMenuAccessibility)
+overlay.addEventListener('click', toggleMenuAccessibility)
 
 
 // Selecionar todos os botões de accordion
