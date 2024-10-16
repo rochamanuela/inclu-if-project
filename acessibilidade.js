@@ -30,24 +30,36 @@ const shapeMiddle = document.querySelector('.shape-middle');
 const shapeMiddleSrc = shapeMiddle.src;
 
 const toggleColorButton = document.querySelector('.toggle-color');
+const toggleColorImage = toggleColorButton.querySelector('img');
+const toggleColorImageSrc = toggleColorImage.src;
 toggleColorButton.addEventListener('click', toggleColor);
 
 const removeImageButton = document.querySelector('.remove-images');
+const removeImageImage = removeImageButton.querySelector('img');
+const removeImageImageSrc = removeImageImage.src;
 const images = document.querySelectorAll('img');
 removeImageButton.addEventListener('click', removeAllImages);
 
 const text = document.querySelectorAll('p, h1, h2, a, button');
 
 const increaseSizeButton = document.querySelector('.increase-size');
+const increaseSizeImage = increaseSizeButton.querySelector('img');
+const increaseSizeImageSrc = increaseSizeImage.src;
 increaseSizeButton.addEventListener('click', () => changeSize('increase'));
 
 const decreaseSizeButton = document.querySelector('.decrease-size');
+const decreaseSizeImage = decreaseSizeButton.querySelector('img');
+const decreaseSizeImageSrc = decreaseSizeImage.src;
 decreaseSizeButton.addEventListener('click', () => changeSize('decrease'));
 
 const increaseRowSizeButton = document.querySelector('.increase-row');
+const increaseRowSizeImage = increaseRowSizeButton.querySelector('img');
+const increaseRowSizeImageSrc = increaseRowSizeImage.src;
 increaseRowSizeButton.addEventListener('click', () => changeRowSize('increase'));
 
 const decreaseRowSizeButton = document.querySelector('.decrease-row');
+const decreaseRowSizeImage = decreaseRowSizeButton.querySelector('img');
+const decreaseRowSizeImageSrc = decreaseRowSizeImage.src;
 decreaseRowSizeButton.addEventListener('click', () => changeRowSize('decrease'));
 
 function removeAllImages() {
@@ -71,6 +83,12 @@ function toggleColor() {
         shapeMiddle.src = 'contrast_images/shape-1-mobile-contrast.png';
         shapes[0].src = 'contrast_images/shape-1-mobile-contrast.png';
         shapes[1].src = 'contrast_images/shape-2-mobile-contrast.png';
+        toggleColorImage.src = 'contrast_images/contrast-contrast.svg';
+        removeImageImage.src = 'contrast_images/removeImg-contrast.svg';
+        increaseSizeImage.src = 'contrast_images/font1-contrast.svg';
+        decreaseSizeImage.src = 'contrast_images/font2-contrast.svg';
+        increaseRowSizeImage.src = 'contrast_images/line1-contrast.svg';
+        decreaseRowSizeImage.src = 'contrast_images/line2-contrast.svg';
     }else{
         bubble.src = bubbleSrc;
         bubble1.src = bubble1Src;
@@ -82,6 +100,12 @@ function toggleColor() {
         shapeMiddle.src = shapeMiddleSrc;
         shapes[0].src = shape1Src;
         shapes[1].src = shape2Src;
+        toggleColorImage.src = toggleColorImageSrc;
+        removeImageImage.src = removeImageImageSrc;
+        increaseSizeImage.src = increaseSizeImageSrc;
+        decreaseSizeImage.src = decreaseSizeImageSrc;
+        increaseRowSizeImage.src = increaseRowSizeImageSrc;
+        decreaseRowSizeImage.src = decreaseRowSizeImageSrc;
     }
 }
 

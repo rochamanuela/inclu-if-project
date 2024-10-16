@@ -1,6 +1,9 @@
 .no_image{
     display: none;
 }
+.internal-buttons.internal-buttons button img.no_image, .menu-eye.no_image{
+    display: flex;
+}
 
 img.logotype-dark.contrast, img.logo-if.contrast, section#history.contrast img.shape{
     filter: none;
@@ -17,8 +20,12 @@ section#documentation.contrast p a, button.contrast {
 body.contrast, .navbar.contrast, .internal-links.contrast, .banner.contrast, .banner-content.contrast,
 .banner p.banner-subtitle.contrast span, section.contrast, section#history.contrast, 
 .accordion-button.contrast, section#location.contrast div, button.contrast, section.contrast, 
-body.contrast::-webkit-scrollbar-track {
+body.contrast::-webkit-scrollbar-track, .internal-buttons.internal-buttons button.contrast {
     background: #000;
+}
+
+.internal-buttons.internal-buttons.contrast{
+    background: #292929;
 }
 
 section#documentation.contrast p a{
