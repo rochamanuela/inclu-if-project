@@ -72,7 +72,13 @@ p {
     margin-bottom: 30px;
 }
 
-.internal-links, .internal-buttons {
+#close-menu-accessibility {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+}
+
+.internal-links {
     z-index: 40;
     position: fixed;
     top: 0;
@@ -89,22 +95,52 @@ p {
     box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* .internal-buttons {
+.internal-buttons {
     z-index: 40;
     position: fixed;
-    top: 0;
-    left: -100%;
-    width: 250px;
-    height: 100vh;
-    background-color: #fff;
+    bottom: -100%;
+    width: 100%;
+    height: 400px;
+    background-color: #F1F1F1;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: flex-start;
     color: #000;
-    transition: left .5s ease-in-out;
-    box-shadow: 5px 7px 15px rgba(0, 0, 0, 0.15);
-} */
+    transition: bottom .5s ease-in-out;
+    box-shadow: 0px -10px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.internal-buttons .buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 25px;
+    gap: 10px;
+}
+
+.internal-buttons .buttons button {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 5px);
+    font-family: 'Questrial';
+    font-size: 12px;
+    text-shadow:
+        -0.08px -0.08px 0px black,
+        0.08px -0.08px 0px black,
+        -0.08px 0.08px 0px black,
+        0.08px 0.08px 0px black;
+
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 7px;
+    border: none;
+    gap: 3px;
+}
 
 .internal-links img {
     width: 120px;
@@ -113,8 +149,12 @@ p {
     margin-bottom: 50px;
 }
 
-.internal-links.open, .internal-buttons.open {
+.internal-links.open {
     left: 0;
+}
+
+.internal-buttons.open {
+    bottom: 0;
 }
 
 .internal-links .links a {
@@ -144,6 +184,18 @@ p {
 
 .overlay.open {
     display: block;
+}
+
+.title-accessibility {
+    font-size: 16px;
+    line-height: 16px;
+    text-shadow:
+        -0.2px -0.2px 0px black,
+        0.2px -0.2px 0px black,
+        -0.2px 0.2px 0px black,
+        0.2px 0.2px 0px black;
+    margin-left: 25px;
+    margin-top: 25px;
 }
 
 /* styles for banner */
@@ -509,7 +561,7 @@ img.logo-if {
 
 .menu-eye {
     position: fixed;
-
+    z-index: 1;
     top: calc(50% + 26px);
     right: 10px;
 }

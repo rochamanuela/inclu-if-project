@@ -31,7 +31,6 @@ menuAccessibility.addEventListener('click', toggleMenuAccessibility)
 closeMenuAccessibility.addEventListener('click', toggleMenuAccessibility)
 overlay.addEventListener('click', toggleMenuAccessibility)
 
-
 // Selecionar todos os botões de accordion
 const buttons = document.querySelectorAll('.accordion-button');
 
